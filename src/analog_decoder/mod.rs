@@ -1,7 +1,7 @@
 pub mod decoder {
 
     ///mod digital_decoder;
-use digital_decoder::decoder::DigitalDecoder;
+    use digital_decoder::decoder::DigitalDecoder;
 
     const HW_RATIO: i32 = 17;
 
@@ -11,22 +11,22 @@ use digital_decoder::decoder::DigitalDecoder;
 
     const FILTER_ALPHA: f32 = 0.7;
 
-    pub struct AnalogDecoder <'a>{
+    pub struct AnalogDecoder {
         pub discarded_samples: i32,
         pub ook_max: f32,
         pub val: f32,
-        pub cb: Box<Fn( &mut  DigitalDecoder <'a>, u8)>,
+        pub cb: Box<Fn(&mut DigitalDecoder, u8)>,
         //pub cb: Option<fn(u8)>,
     }
 
-    impl <'a> AnalogDecoder<'a> {
-        pub fn new() -> AnalogDecoder<'a>{
-     AnalogDecoder{
-         discarded_samples: 0,
-         ook_max: 0.0,
-         val: 0.0,
-         cb: Box::new( DigitalDecoder::handle_data),
-    }
+    impl<'a> AnalogDecoder {
+        pub fn new() -> AnalogDecoder {
+            AnalogDecoder {
+                discarded_samples: 0,
+                ook_max: 0.0,
+                val: 0.0,
+                cb: Box::new(DigitalDecoder::handle_data),
+            }
         }
 
         pub fn handle_magnitude(&mut self, value: f32) {

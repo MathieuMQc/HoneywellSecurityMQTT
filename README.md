@@ -1,3 +1,8 @@
+# MathieuMQc's Note
+
+I had this repo on my server and I saw that the creator had removed readme and I wanted to share with you this version that works for me. 
+
+
 # HoneywellSecurityMQTT
 
 This project is based on jhaines0's HoneywellSecurity project but instead of being intended for integration with SmartThings, it is designed to report status via MQTT.  This allows it to easily be used with other systems such as Home Assistant.

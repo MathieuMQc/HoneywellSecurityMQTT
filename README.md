@@ -1,6 +1,6 @@
 # MathieuMQc's Note
 
-I had this repo on my server and I saw that the creator had removed readme and I wanted to share with you this version that works for me. 
+I had this project on my server and I saw that the creator had removed readme and I wanted to share with you this version that works for me. 
 
 
 # HoneywellSecurityMQTT

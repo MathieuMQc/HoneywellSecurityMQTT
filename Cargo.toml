@@ -1,7 +1,0 @@
-[package]
-name = "HoneywellSecurityMQTT"
-version = "0.1.0"
-authors = ["Sam <TheIrrationalDevotion@gmail.com>"]
-
-[dependencies]
-rtlsdr = "0.1.4"

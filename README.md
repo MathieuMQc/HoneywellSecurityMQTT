@@ -1,7 +1,7 @@
 # MathieuMQc's Note
 
 I had this project on my server and I saw that the creator had removed readme and I wanted to share with you this version that works for me. 
-
+If anyone is able to make it work on docker, I would love to use it. honeywell2mqtt doesn't work for me.
 
 # HoneywellSecurityMQTT
 
